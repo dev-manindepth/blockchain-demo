@@ -1,0 +1,15 @@
+
+Blockchain is a distributed immutable ledger which is completely transparent
+
+Internet (web2) -> Communication
+Blockchain (web3) -> Trust 
+
+
+Blockchain
+- Timestamp 
+- Data 
+- Prev Hash:
+- Hash 
+
+Genesis Block 
+- First block of Blockchain

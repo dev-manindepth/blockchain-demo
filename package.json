@@ -1,0 +1,19 @@
+{
+  "name": "blockchain-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/hex-to-binary": "^1.0.2",
+    "@types/node": "^20.10.3",
+    "hex-to-binary": "^1.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.3"
+  }
+}
