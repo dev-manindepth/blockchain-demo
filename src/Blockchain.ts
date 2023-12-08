@@ -8,14 +8,19 @@ export class Blockchain {
     this.chain = [Block.genesis()];
   }
   addBlock(data: any) {
-    const newBlock = Block.mineBlock(
-      this.chain[this.chain.length - 1],
-      data
-    );
+    const newBlock = Block.mineBlock(this.chain[this.chain.length - 1], data);
     this.chain.push(newBlock);
   }
-  replaceChain(){
-     
+  replaceChain(chain: Block[]) {
+    if (chain.length <= this.chain.length) {
+      console.error('The incoming chain is not longer');
+      return;
+    }
+    if (!Blockchain.isValidChain(chain)) {
+      console.error('The incoming chain is not valid');
+      return;
+    }
+    this.chain = chain;
   }
   static isValidChain(chain: Block[]) {
     if (JSON.stringify(chain[0]) !== JSON.stringify(Block.genesis())) {
